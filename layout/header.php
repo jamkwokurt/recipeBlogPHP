@@ -5,9 +5,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href= <?php
-                include ('path.php');
-                echo BASE_URL. 'index.php' ?>>jammit</a>
+                <a class="navbar-brand" href= "/recipeBlogPHP/index.php">jammit</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active" id="btnHome"><a href="#">Home</a></li>
@@ -19,6 +17,7 @@
                         <li id="btnCake"><a href="#">Cake</a></li>
                         <li id="btnTart"><a href="#">Tart</a></li>
                         <li id="btnPastry"><a href="#">Biscuit</a></li>
+                        <li id="btnDessert"><a href="#">Frozen</a></li>
                         <li id="btnDessert"><a href="#">Plated Dessert</a></li>
                         <li id="btnPreserves"><a href="#">Fruit Preserves</a></li>
                         <li id="btnDecoration"><a href="#">Decoration</a></li>
@@ -32,12 +31,12 @@
             <?php
             if (isset($_SESSION['username'])) {
                 echo'<ul class="nav navbar-nav navbar-right">
-                        <li id="nav-profile"><a href="nav/dashboard.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                        <li id="nav-logout"><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        <li id="nav-profile"><a href="/recipeBlogPHP/nav/dashboard.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                        <li id="nav-logout"><a href="/recipeBlogPHP/logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>';
             }else {
                 echo'<ul class="nav navbar-nav navbar-right">
-                        <li id="nav-signup"><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li id="nav-signup"><a href="/recipeBlogPHP/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li id="nav-login"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>';
             }

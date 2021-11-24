@@ -18,8 +18,8 @@ include("../layout/header.php")
         <div class="form">
             <p>Dashboard</p>
             <p>This is another secured page.</p>
-            <p><a href="../index.php">Home</a></p>
-            <a href="../logout.php">Logout</a>
+            <p><a href="/recipeBlogPHP/index.php">Home</a></p>
+            <a href="/recipeBlogPHP/logout.php">Logout</a>
         </div>
         <?php
         include("../layout/footer.php")
