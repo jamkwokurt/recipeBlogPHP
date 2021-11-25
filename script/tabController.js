@@ -7,6 +7,11 @@ document.getElementById("btnHome").addEventListener('click', ()=>{
 document.getElementById("btnCake").addEventListener('click', ()=>{
     switchTabs('recipe-content');
 });
+
+document.getElementById('btnAllRecipes').addEventListener('click', ()=>{
+    switchTabs('recipe-content');
+});
+
 document.getElementById("btnTart").addEventListener('click', ()=>{
     switchTabs('recipe-content');
 });
@@ -35,19 +40,21 @@ document.getElementById("btnAbout").addEventListener('click', ()=>{
     switchTabs('about-content');
 });
 
-document.getElementById("navSignup").addEventListener('click', ()=>{
+document.getElementById("nav-signup").addEventListener('click', ()=>{
     switchTabs('signup-content');
 });
 
-document.getElementById("navLogin").addEventListener('click', ()=>{
+document.getElementById("nav-login").addEventListener('click', ()=>{
     switchTabs('login-content');
 });
-document.getElementById("navProfile").addEventListener('click', ()=>{
-    switchTabs('profile-content');
-});
-document.getElementById("navLogout").addEventListener('click', ()=>{
-    switchTabs('logout-content');
-});
+// document.getElementById("nav-profile").addEventListener('click', ()=>{
+//     switchTabs('profile-content');
+// });
+// document.getElementById("nav-logout").addEventListener('click', ()=>{
+//     switchTabs('logout-content');
+// });
+
+
 
 function switchTabs(tabID) {
     let tabContents = document.getElementsByClassName('tab-content');

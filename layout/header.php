@@ -13,7 +13,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown">Recipes
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="recipe-dropdown">
-                        <li id="btnAllRecipes"><a href="recipes/recipes.php">All Recipes</a></li>
+                        <li id="btnAllRecipes"><a href="#">All Recipes</a></li>
                         <li id="btnCake"><a href="#">Cake</a></li>
                         <li id="btnTart"><a href="#">Tart</a></li>
                         <li id="btnPastry"><a href="#">Biscuit</a></li>
@@ -29,6 +29,7 @@
             </ul>
 
             <?php
+            session_start();
             if (isset($_SESSION['username'])) {
                 echo'<ul class="nav navbar-nav navbar-right">
                         <li id="nav-profile"><a href="/recipeBlogPHP/nav/dashboard.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
@@ -43,4 +44,5 @@
             ?>
         </div>
     </nav>
+    <script src="../script/tabController.js"></script>
 </div>

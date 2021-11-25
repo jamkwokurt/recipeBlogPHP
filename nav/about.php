@@ -1,6 +1,5 @@
 <?php
 //include auth.php file on all secure pages
-include('../auth.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,10 +11,10 @@ include('../auth.php');
 <body>
 <div id="page-container">
     <div id="content-wrap">
-<div class="form">
-    <p>About</p>
-    <p>This is another secured page.</p>
-</div>
+        <div class="form">
+            <h3>About</h3>
+            <p>This is another secured page.</p>
+        </div>
     </div>
 </div>
 </body>

@@ -9,7 +9,7 @@
 <?php
 require('db.php');
 include("layout/header.php");
-session_start();
+
 // If form submitted, insert values into the database.
 if (isset($_POST['username'])){
 	$username = stripslashes($_REQUEST['username']);
@@ -25,23 +25,27 @@ if (isset($_POST['username'])){
     if($rows==1){
     $_SESSION['username'] = $username;
         // Redirect user to index.php
-    header("Location: /recipeBlogPHP/index.php/");
+    header("Location: index.php");
  }else{
-    echo "<div class='form'>
+    echo "<div class='form' id='box-error'>
     <h3>Username/password is incorrect.</h3>
     <br/>Click here to <a href='login.php'>Login</a></div>";
  }
 }else{
     ?>
-    <div class="form">
+    <div class="box-account">
+    <div class="form" id="box-login">
     <h1>Log In</h1>
     <form action="" method="post" name="login">
     <input type="text" name="username" placeholder="Username" required />
-    <input type="password" name="password" placeholder="Password" required /><br>
+    <br>
+    <input type="password" name="password" placeholder="Password" required />
+    <br>
     <input name="submit" type="submit" value="Login" class="btn-submit"/>
     </form>
     <br>
     <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+    </div>
     </div>
 <?php
 } ?>

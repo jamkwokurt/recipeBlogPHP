@@ -1,6 +1,5 @@
 <?php
 require('../db.php');
-include("../auth.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,11 +14,19 @@ include("../layout/header.php")
 ?>
 <div id="page-container">
     <div id="content-wrap">
+        <div class="box-account">
         <div class="form">
             <p>Dashboard</p>
-            <p>This is another secured page.</p>
+            <?php
+            if(isset($_SESSION['username'])){
+                echo "Welcome " . $_SESSION['username']."!";
+            }
+            ?>
+            <br>
+            <br>
             <p><a href="/recipeBlogPHP/index.php">Home</a></p>
             <a href="/recipeBlogPHP/logout.php">Logout</a>
+        </div>
         </div>
         <?php
         include("../layout/footer.php")

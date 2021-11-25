@@ -1,4 +1,7 @@
 <?php
+include ('db.php');
+include ('layout/header.php');
+
 // If form submitted, insert values into the database.
 if (isset($_POST['username'])){
     // removes backslashes
@@ -17,8 +20,6 @@ if (isset($_POST['username'])){
         // Redirect user to index.php
         header("Location: index.php");
     }else{
-        echo "<div class='form'>
-        <h3>Username/password is incorrect.</h3>
-        <br/>Click here to <a href='login.php'>Login</a></div>";
+        header("Location: errorPage.php");
     }
-}
+};

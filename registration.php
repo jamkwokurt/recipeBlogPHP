@@ -5,7 +5,7 @@
     <title>Registration</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<div>
 <?php
 require('db.php');
 include("layout/header.php");
@@ -30,15 +30,21 @@ if (isset($_REQUEST['username'])){
     }
     }else{
     ?>
-    <div class="form">
+    <div class="box-account">
+    <div class="form" id="box-register">
         <h1>Registration</h1>
         <form name="registration" action="" method="post">
             <input type="text" name="username" placeholder="Username" required />
+            <br>
             <input type="email" name="email" placeholder="Email" required />
+            <br>
             <input type="password" name="password" placeholder="Password" required />
+            <br>
             <input type="submit" name="submit" value="Register" class="btn-submit"/>
+            <br>
         </form>
-        <br/>Already registered? Click here to <a href='login.php'>Login</a></div>";
+        <br/>Already registered? Click here to <a href='login.php'>Login</a></div>;
+    </div>
     </div>
 <?php } ?>
 <?php
