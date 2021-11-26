@@ -113,3 +113,29 @@ input[type='submit']:hover {
 .box-account {
     text-align: center;
 }
+.tab-content {
+    width: 100%;
+    height:400px;
+    overflow: hidden;
+    text-align: center;
+}
+.recipe-body {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.tab-body {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

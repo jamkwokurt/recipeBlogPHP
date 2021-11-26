@@ -6,11 +6,11 @@ require('../db.php');
 <head>
     <meta charset="utf-8">
     <title>Dashboard - Secured Page</title>
-    <link rel="stylesheet" href="../css/style.css" />
+<!--    <link rel="stylesheet" href="../css/style.css" />-->
 </head>
 <body>
 <?php
-include("../layout/header.php")
+//include("../layout/header.php")
 ?>
 <div id="page-container">
     <div id="content-wrap">
@@ -29,7 +29,7 @@ include("../layout/header.php")
         </div>
         </div>
         <?php
-        include("../layout/footer.php")
+//        include("../layout/footer.php")
         ?>
     </div>
 </div>

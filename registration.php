@@ -43,7 +43,7 @@ if (isset($_REQUEST['username'])){
             <input type="submit" name="submit" value="Register" class="btn-submit"/>
             <br>
         </form>
-        <br/>Already registered? Click here to <a href='login.php'>Login</a></div>;
+        <br/>Already registered? Click here to <a href='login.php'>Login</a></div>
     </div>
     </div>
 <?php } ?>

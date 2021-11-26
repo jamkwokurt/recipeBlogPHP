@@ -17,7 +17,8 @@
                         <li id="btnCake"><a href="#">Cake</a></li>
                         <li id="btnTart"><a href="#">Tart</a></li>
                         <li id="btnPastry"><a href="#">Biscuit</a></li>
-                        <li id="btnDessert"><a href="#">Frozen</a></li>
+                        <li id="btnPastry"><a href="#">Pastry</a></li>
+                        <li id="btnFrozen"><a href="#">Frozen</a></li>
                         <li id="btnDessert"><a href="#">Plated Dessert</a></li>
                         <li id="btnPreserves"><a href="#">Fruit Preserves</a></li>
                         <li id="btnDecoration"><a href="#">Decoration</a></li>
@@ -32,7 +33,7 @@
             session_start();
             if (isset($_SESSION['username'])) {
                 echo'<ul class="nav navbar-nav navbar-right">
-                        <li id="nav-profile"><a href="/recipeBlogPHP/nav/dashboard.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                        <li id="nav-profile"><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                         <li id="nav-logout"><a href="/recipeBlogPHP/logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>';
             }else {

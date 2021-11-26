@@ -5,18 +5,14 @@ require('../db.php');
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/recipe-page-style.css"/>
     <title>Home Page</title>
     <!-- Bootstrap  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="page-container">
-    <div id="content-wrap">
-        <div class="container" class="container-fluid">
+    <div class="right">
         <p>Single Recipe Page</p>
-        </div>
     </div>
-</div>
-
 </body>
 </html>
