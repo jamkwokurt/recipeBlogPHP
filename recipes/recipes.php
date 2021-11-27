@@ -20,7 +20,7 @@ include ('../db.php');
 </style>
 <div class="flex-container">
     <div class="flex-item-left">
-        <p>Recipes Tag</p>
+        <h2 id="recipe-index-title">Recipes Tag</h2>
         <div>
             <ul class="list-group" id="recipe tag">
                 <?php
@@ -28,17 +28,9 @@ include ('../db.php');
             </ul>
         </div>
     </div>
-    <div class="flex-item-right" id="recipe-content">
+    <div class="flex-item-right">
         <?php
-        $getTag_sql = 'SELECT tag FROM tag';
-        $getTag = mysqli_query($con,$getTag_sql);
-        while($tag = mysqli_fetch_assoc($getTag) && !empty( mysqli_fetch_assoc($getTag)['tag'].'.php')) {
-            include ($tag['tag'].'.php');
-        }
-        ?>
-<!--        <iframe src="single.php" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">-->
-<!---->
-<!--        </iframe>-->
+        include("../layout/recipeView.php"); ?>
     </div>
 </div>
 </body>
