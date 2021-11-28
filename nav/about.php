@@ -1,14 +1,11 @@
-<?php
-//include auth.php file on all secure pages
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>About</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/centerContentStyle.css"/>
 </head>
-<body>
+<body class="center-content">
 <div id="page-container">
     <div id="content-wrap">
         <div class="form">

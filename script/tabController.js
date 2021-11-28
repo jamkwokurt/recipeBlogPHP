@@ -12,11 +12,16 @@ document.getElementById('btnAllRecipes').addEventListener('click', ()=>{
 document.getElementById("btnCake").addEventListener('click', ()=>{
     switchTabs('recipe-content');
 });
-
 document.getElementById("btnTart").addEventListener('click', ()=>{
     switchTabs('recipe-content');
 });
+document.getElementById("btnBiscuit").addEventListener('click', ()=>{
+    switchTabs('recipe-content');
+});
 document.getElementById("btnPastry").addEventListener('click', ()=>{
+    switchTabs('recipe-content');
+});
+document.getElementById("btnFrozen").addEventListener('click', ()=>{
     switchTabs('recipe-content');
 });
 document.getElementById("btnDessert").addEventListener('click', ()=>{

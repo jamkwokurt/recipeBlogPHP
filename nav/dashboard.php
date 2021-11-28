@@ -5,13 +5,10 @@ require('../db.php');
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Dashboard - Secured Page</title>
-<!--    <link rel="stylesheet" href="../css/style.css" />-->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/centerContentStyle.css"/>
 </head>
-<body>
-<?php
-//include("../layout/header.php")
-?>
+<body class="center-content">
 <div id="page-container">
     <div id="content-wrap">
         <div class="box-account">
@@ -28,9 +25,6 @@ require('../db.php');
             <a href="/recipeBlogPHP/logout.php">Logout</a>
         </div>
         </div>
-        <?php
-//        include("../layout/footer.php")
-        ?>
     </div>
 </div>
 </body>
