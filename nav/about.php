@@ -9,7 +9,7 @@
 <div id="page-container">
     <div id="content-wrap">
         <div class="form">
-            <h3>About</h3>
+            <h1>About</h1>
             <p>This is another secured page.</p>
         </div>
     </div>

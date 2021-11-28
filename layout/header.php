@@ -16,7 +16,7 @@
                         <li id="btnAllRecipes"><a href="#">All Recipes</a></li>
                         <li id="btnCake"><a href="#">Cake</a></li>
                         <li id="btnTart"><a href="#">Tart</a></li>
-                        <li id="btnPastry"><a href="#">Biscuit</a></li>
+                        <li id="btnBiscuit"><a href="#">Biscuit</a></li>
                         <li id="btnPastry"><a href="#">Pastry</a></li>
                         <li id="btnFrozen"><a href="#">Frozen</a></li>
                         <li id="btnDessert"><a href="#">Plated Dessert</a></li>

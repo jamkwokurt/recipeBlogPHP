@@ -3,14 +3,15 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
+
 }
-#main-container {
-    font-family:Arial, Sans-Serif;
-    background-image: url(../img/background.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
-}
+/*#main-container {*/
+/*    font-family:Arial, Sans-Serif;*/
+/*    background-image: url(../img/background.jpg);*/
+/*    background-size:cover;*/
+/*    background-repeat:no-repeat;*/
+/*    background-position:center center;*/
+/*}*/
 .clearfix:before, .clearfix:after{
     content: "";
     display: table;
@@ -125,8 +126,8 @@ input[type='submit']:hover {
     overflow: hidden;
 }
 .tab-body {
-    width:100%;
-    height: 100%;
+    width:120%;
+    height: 120%;
     overflow: hidden;
     display: flex;
     text-align: center;
