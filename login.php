@@ -9,22 +9,18 @@
 <?php
 require('db.php');
 include("layout/header.php");
-
-// If form submitted, insert values into the database.
 if (isset($_POST['username'])){
 	$username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
 	$username = mysqli_real_escape_string($con,$username);
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
-	//Checking if user exists in the database or not
+
     $query = "SELECT * FROM `users` WHERE username='$username'
             and password='".md5($password)."'";
 	$result = mysqli_query($con,$query) or die(mysqli_error());
 	$rows = mysqli_num_rows($result);
     if($rows==1){
     $_SESSION['username'] = $username;
-        // Redirect user to index.php
     header("Location: index.php");
  }else{
     echo "<div class='form' id='box-error'>

@@ -33,5 +33,6 @@ include ('../db.php');
         include("../layout/recipeView.php"); ?>
     </div>
 </div>
+<script src="../script/tabController.js"></script>
 </body>
 </html>

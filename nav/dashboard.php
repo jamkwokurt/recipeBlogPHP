@@ -13,16 +13,13 @@ require('../db.php');
     <div id="content-wrap">
         <div class="box-account">
         <div class="form">
-            <p>Dashboard</p>
+            <h2>Dashboard</h2>
             <?php
+            session_start();
             if(isset($_SESSION['username'])){
                 echo "Welcome " . $_SESSION['username']."!";
             }
             ?>
-            <br>
-            <br>
-            <p><a href="/recipeBlogPHP/index.php">Home</a></p>
-            <a href="/recipeBlogPHP/logout.php">Logout</a>
         </div>
         </div>
     </div>

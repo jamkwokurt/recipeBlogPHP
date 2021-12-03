@@ -7,8 +7,8 @@
 </head>
 <body class="center-content">
 <div>
-    <p>Bookmark</p>
-    <p>This is another secured page.</p>
+    <h2>Bookmark</h2>
+    <p><em>*Under construction*</em></p>
 </div>
 </body>
 </html>

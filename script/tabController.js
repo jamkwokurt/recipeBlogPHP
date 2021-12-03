@@ -11,28 +11,36 @@ document.getElementById('btnAllRecipes').addEventListener('click', ()=>{
 
 document.getElementById("btnCake").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Cake');
 });
 
 document.getElementById("btnTart").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Tart');
 });
 document.getElementById("btnBiscuit").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Biscuit');
 });
 document.getElementById("btnPastry").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Pastry');
 });
 document.getElementById("btnFrozen").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Forzen');
 });
 document.getElementById("btnDessert").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Plated Dessert');
 });
 document.getElementById("btnPreserves").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Fruit Preserves');
 });
 document.getElementById("btnDecoration").addEventListener('click', ()=>{
     switchTabs('recipe-content');
+    switchView('Decoration');
 });
 
 document.getElementById("btnBookmark").addEventListener('click', ()=>{
@@ -66,6 +74,17 @@ function switchTabs(tabID) {
             tabContents[i].style.display = 'none';
         } else {
             tabContents[i].style.display = 'block';
+        }
+    }
+}
+
+function switchView(viewID) {
+    let recipeContents = document.getElementsByClassName("recipe-content-section");
+    for (let i = 0; i < recipeContents.length; i++) {
+        if (viewID !== recipeContents[i].id) {
+            recipeContents[i].style.display = 'none';
+        } else {
+            recipeContents[i].style.display = 'block';
         }
     }
 }

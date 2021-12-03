@@ -1,25 +1,32 @@
 <?php
 $getTag_sql = 'SELECT tag FROM tag';
-$getType_sql = 'SELECT type FROM recipe';
-$getItem_sql = 'SELECT item FROM recipe';
-$getType = mysqli_query($con,$getType_sql);
-$getItem = mysqli_query($con,$getItem_sql);
 $getTag = mysqli_query($con,$getTag_sql);
-$count = 0;
-while($tag = mysqli_fetch_assoc($getTag)) {
-    $type = mysqli_fetch_assoc($getType);
-    $item = mysqli_fetch_assoc($getItem);
-    foreach ($item as $i){
-        if($type['type'] === $tag['tag']){
-            $count += $count;
+$getType_sql = 'SELECT type FROM recipe';
+$getType = mysqli_query($con,$getType_sql);
+
+//count each type and append counts to tags
+$counts = [];
+
+while($types = mysqli_fetch_assoc($getType)) {
+    $values=array_count_values($types);
+    foreach ($types as $value) {
+        if (key_exists($value, $counts)) {
+            $counts[$value] += 1;
+        } else {
+            $counts[$value] = 1;
         }
     }
-    ?>
-    <li class="list-group-item"><a href="#"><?php echo $tag['tag']?></a>
-        <span class="badge"><?php echo $count ?></span></li>
-    <?php
+}
+while($tags = mysqli_fetch_assoc($getTag)){
+    foreach ($tags as $value){
+        ?>
+        <li class="list-group-item"><a href="#"><?php echo $value?></a>
+            <span class="badge"><?php echo $counts[$value] ?></span></li>
+        <?php
+    }
 }
 ?>
+
 
 
 

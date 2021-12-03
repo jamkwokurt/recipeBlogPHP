@@ -18,7 +18,7 @@
 }
 
 .flex-item-right {
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 30px;
     flex: 85%;
 }
@@ -29,15 +29,7 @@
         flex: 100%;
     }
 }
-.right {
-    /*margin-top: 20px;*/
-    /*width: 100%;*/
-    /*padding: 10px;*/
-    /*position:fixed;*/
-    /*!*top:10%; *!*/
-    /*left:20%; bottom:0; right:0; height:100%; border:none; overflow:hidden; z-index:999999;*/
 
-}
 #recipe-item-name {
     text-align: center;
 }
